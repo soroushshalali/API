@@ -1,7 +1,7 @@
 function searchFunc() {
     let input = document.getElementById("input").value;
     console.log(input);
-    fetch(`http://newsapi.org/v2/everything?q=${input}&from=2020-02-25&sortBy=publishedAt&apiKey=fa168a8960ee4bf0911fbf6759ae54c7`)
+    fetch(`https://newsapi.org/v2/everything?q=${input}&from=2020-02-25&sortBy=publishedAt&apiKey=fa168a8960ee4bf0911fbf6759ae54c7`)
         .then(response => response.json())
         .then(data => {
             console.log(data)
@@ -20,7 +20,7 @@ function searchFunc() {
         })
 }
 function main(para) {
-    fetch(`http://newsapi.org/v2/top-headlines?category=${para}&from=2020-02-25&sortBy=publishedAt&apiKey=fa168a8960ee4bf0911fbf6759ae54c7`)
+    fetch(`https://newsapi.org/v2/top-headlines?category=${para}&from=2020-02-25&sortBy=publishedAt&apiKey=fa168a8960ee4bf0911fbf6759ae54c7`)
         .then(response => response.json())
         .then(data => {
             console.log(data)
